@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Interview</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <i hidden>{{ '/js/hot-fileloader.js' | ifDebugIncludeScript }}</i>
+
+  <app-root></app-root>
+
+  <div id="footer" style="text-align:center; position:absolute; bottom:50px; width:100%;">
+    <h4>
+        <img src="/assets/img/logo.png" />
+        <a href="https://servicestack.net/vs-templates/angular-spa">Learn about this Angular template</a>
+    </h4>
+    <div>Copyright &copy; {{ now | dateFormat('yyyy') }}</div>
+  </div>
+
+</body>
+</html>
